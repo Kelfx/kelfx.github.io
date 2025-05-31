@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -126,12 +126,12 @@
     top: 0;
     color: #33ff33;
   }
-  #portfolio-grid {
+  #websites-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.8rem;
   }
-  .portfolio-item {
+  .websites-item {
     background: #202020;
     border-radius: 15px;
     overflow: hidden;
@@ -141,43 +141,43 @@
     display: flex;
     flex-direction: column;
   }
-  .portfolio-item:hover,
-  .portfolio-item:focus-within {
+  .websites-item:hover,
+  .websites-item:focus-within {
     transform: translateY(-10px);
     box-shadow: 0 0 40px #9828FA;
     outline: none;
   }
-  .portfolio-image {
+  .websites-image {
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     filter: brightness(0.85);
     transition: filter 0.3s ease;
   }
-  .portfolio-item:hover .portfolio-image,
-  .portfolio-item:focus-within .portfolio-image {
+  .websites-item:hover .websites-image,
+  .websites-item:focus-within .websites-image {
     filter: brightness(1);
   }
-  .portfolio-details {
+  .websites-details {
     padding: 1.2rem 1.6rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     color: #c6f7c6;
   }
-  .portfolio-title {
+  .websites-title {
     font-weight: 700;
     margin-bottom: 0.65rem;
     font-size: 1.25rem;
     color: #33ff33;
     user-select: none;
   }
-  .portfolio-description {
+  .websites-description {
     flex-grow: 1;
     font-size: 0.95rem;
     color: #a1d9a1;
   }
-  .portfolio-link {
+  .websites-link {
     margin-top: 1.3rem;
     align-self: flex-start;
     background: #33ff33;
@@ -189,8 +189,8 @@
     transition: background-color 0.25s ease, box-shadow 0.25s ease;
     user-select: none;
   }
-  .portfolio-link:hover,
-  .portfolio-link:focus {
+  .websites-link:hover,
+  .websites-link:focus {
     background: #9828FA;
     color: #f5f5f5;
     box-shadow: 0 0 12px #9828FAcc;
@@ -327,7 +327,7 @@
   <nav>
     <a href="#intro" tabindex="0">Who Am I</a>
     <a href="#cv" tabindex="0">CV</a>
-    <a href="#portfolio" tabindex="0">Portfolio</a>
+    <a href="#websites" tabindex="0">Websites</a>
     <a href="https://github.com/Kelfx" tabindex="0">GitHub</a>
   </nav>
 </header>
@@ -349,44 +349,44 @@
       </ul>
     </div>
   </section>
-  <section id="portfolio" tabindex="0">
-    <h2>Portfolio</h2>
-    <p class="portfolio-description">Here are some of the websites I created using Wordpress and Elementor for different Erasmus+ projects.</p>
-    <div id="portfolio-grid" role="list">
-      <!-- Portfolio items -->
-      <article class="portfolio-item" tabindex="0" role="listitem">
-        <img class="portfolio-image" src="imgs/IMINTALES.png" alt="Screenshot I'M IN TALES Project" />
-        <div class="portfolio-details">
-          <h3 class="portfolio-title">I'M IN TALES</h3>
-          <a href="https://www.imintalesproject.eu" target="_blank" rel="noopener" class="portfolio-link">Go to website</a>
+  <section id="websites" tabindex="0">
+    <h2>Websites</h2>
+    <p class="websites-description">Here are some of the websites I created using Wordpress and Elementor for different Erasmus+ projects.</p>
+    <div id="websites-grid" role="list">
+      <!-- Websites items -->
+      <article class="websites-item" tabindex="0" role="listitem">
+        <img class="websites-image" src="imgs/IMINTALES.png" alt="Screenshot I'M IN TALES Project" />
+        <div class="websites-details">
+          <h3 class="websites-title">I'M IN TALES</h3>
+          <a href="https://www.imintalesproject.eu" target="_blank" rel="noopener" class="websites-link">Go to website</a>
         </div>
       </article>
-      <article class="portfolio-item" tabindex="0" role="listitem">
-        <img class="portfolio-image" src="imgs/NEFELE.png" alt="Screenshot sito web Progetto 2" />
-        <div class="portfolio-details">
-          <h3 class="portfolio-title">NEFELE</h3>
-          <a href="https://www.nefele-project.eu/" target="_blank" rel="noopener" class="portfolio-link">Go to website</a>
+      <article class="websites-item" tabindex="0" role="listitem">
+        <img class="websites-image" src="imgs/NEFELE.png" alt="Screenshot sito web Progetto 2" />
+        <div class="websites-details">
+          <h3 class="websites-title">NEFELE</h3>
+          <a href="https://www.nefele-project.eu/" target="_blank" rel="noopener" class="websites-link">Go to website</a>
         </div>
       </article>
-      <article class="portfolio-item" tabindex="0" role="listitem">
-        <img class="portfolio-image" src="imgs/POSITIVEACADEMY.png" alt="Screenshot sito web Progetto 3" />
-        <div class="portfolio-details">
-          <h3 class="portfolio-title">POSITIVE ACADEMY</h3>
-          <a href="https://positiveacademy.eu/" target="_blank" rel="noopener" class="portfolio-link">Go to website</a>
+      <article class="websites-item" tabindex="0" role="listitem">
+        <img class="websites-image" src="imgs/POSITIVEACADEMY.png" alt="Screenshot sito web Progetto 3" />
+        <div class="websites-details">
+          <h3 class="websites-title">POSITIVE ACADEMY</h3>
+          <a href="https://positiveacademy.eu/" target="_blank" rel="noopener" class="websites-link">Go to website</a>
         </div>
       </article>
-      <article class="portfolio-item" tabindex="0" role="listitem">
-        <img class="portfolio-image" src="imgs/TUNED.png" alt="Screenshot sito web Progetto 5" />
-        <div class="portfolio-details">
-          <h3 class="portfolio-title">TUNED</h3>
-          <a href="https://www.tunedproject.eu/" target="_blank" rel="noopener" class="portfolio-link">Go to website</a>
+      <article class="websites-item" tabindex="0" role="listitem">
+        <img class="websites-image" src="imgs/TUNED.png" alt="Screenshot sito web Progetto 5" />
+        <div class="websites-details">
+          <h3 class="websites-title">TUNED</h3>
+          <a href="https://www.tunedproject.eu/" target="_blank" rel="noopener" class="websites-link">Go to website</a>
         </div>
       </article>
-      <article class="portfolio-item" tabindex="0" role="listitem">
-        <img class="portfolio-image" src="imgs/RESTART.png" alt="Screenshot sito web Progetto 4" />
-        <div class="portfolio-details">
-          <h3 class="portfolio-title">RESTART</h3>
-          <a href="https://www.restarteurope.org/" target="_blank" rel="noopener" class="portfolio-link">Go to website</a>
+      <article class="websites-item" tabindex="0" role="listitem">
+        <img class="websites-image" src="imgs/RESTART.png" alt="Screenshot sito web Progetto 4" />
+        <div class="websites-details">
+          <h3 class="websites-title">RESTART</h3>
+          <a href="https://www.restarteurope.org/" target="_blank" rel="noopener" class="websites-link">Go to website</a>
         </div>
       </article>
     </div>
@@ -398,13 +398,13 @@
 </footer>
 
 <!-- Cookie Consent Popup -->
-<div id="cookie-consent" role="dialog" aria-live="polite" aria-label="Informativa cookie">
+<div id="cookie-consent" role="dialog" aria-live="polite" aria-label="Cookie Policy">
   <p>
-    This website uses technical cookies and analytics for a better experience.
+    This website uses technical cookies for a better experience.
     By clicking on <strong>"Accept"</strong> you agree to the use of cookies according to
-    <a href="#privacy-policy">our policy</a>.
+    <a href="/privacy.html">our policy</a>.
   </p>
-  <button id="cookie-accept-btn" aria-label="Accetta cookie">Accept</button>
+  <button id="cookie-accept-btn" aria-label="Accept cookie">Accept</button>
 </div>
 
 <script>
